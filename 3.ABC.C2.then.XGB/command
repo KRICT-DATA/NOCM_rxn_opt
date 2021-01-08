@@ -1,0 +1,4 @@
+foreach f (`seq 50 50 250`)
+  python predict.py sol.$f.5.csv $f
+  rm predictor.*.sav
+end

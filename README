@@ -1,0 +1,11 @@
+*** Directory Description
+1.FNN: Machine learning (ML) regression model with Fully-connected neural network 
+1.XGB: ML regression model with XGBoost for reaction results
+2.ABC.C2: Metaheuristic optimization of C2 yield with artificial bee colony (ABC) algorithm
+3.ABC.C2.then.XGB: XGBoost prediction of reaction results based on metaheuristic optimization
+4.XGB.scoring_function: ML regression model with XGBoost for scoring functions
+5.ABC.scoring_function: Metaheuristic optimization of scoring functions
+6.ABC.scoring_function.then.XGB: XGBoost prediction with the results from metaheuristic optimization of scoring functions
+
+*** Command
+In each directory, we wrote our commands in 'command' file .

@@ -1,0 +1,6 @@
+foreach f (`seq -w 020 20 100`)
+
+cd coke_cutoff.$f
+python xgb.py data*csv 1 250 | grep MAE > out
+cd ..
+end

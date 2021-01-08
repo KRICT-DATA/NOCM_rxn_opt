@@ -1,0 +1,6 @@
+foreach f1 (`seq  1 6`)
+  foreach f2 (`seq 50 50 250`)
+  python fnn.py data_renorm.csv $f1 $f2 | grep MAE >> out
+
+  end
+end

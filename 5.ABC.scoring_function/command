@@ -1,0 +1,15 @@
+foreach f (`seq -w 40 20 100`)
+  if (-f predictor.sav) then
+    rm predictor.sav
+  endif
+
+  cp coke_cutoff.$f/predictor.250.1.sav predictor.sav
+
+  python exec.py >& $f.out
+
+  if (-f sol.$f.csv) then
+      rm sol.$f.csv
+  endif
+
+  cp sol.csv sol.$f.csv
+end

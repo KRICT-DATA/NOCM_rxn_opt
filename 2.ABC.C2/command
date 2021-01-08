@@ -1,0 +1,14 @@
+foreach f (`seq 50 50 250`)
+  if (-f predictor.sav) then
+    rm predictor.sav
+  endif
+
+  cp predictor.$f.5.sav predictor.sav
+  python exec.py >& $f.out
+
+  if (-f sol.$f.5.csv) then
+      rm sol.$f.5.csv
+  endif
+
+  cp sol.csv sol.$f.5.csv
+end
